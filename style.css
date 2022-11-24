@@ -24,20 +24,62 @@ body {
     font-family: 'Raleway', serif;
 }
 
+.perex {
+    text-align: center;
+}
+.autor {
+    font-style: italic;
+}
+.hlavicka {
+    background-image: url(images/island-hlavicka.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+.perex::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: azure;
+
+}
 
 /* MENU */
-
+.menu {
+    list-style-type: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+.menu a {
+    text-decoration: none;
+    color: grey;
+}
 
 
 
 /* OBSAH */
-
+.nadpis::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 5px; 
+    background-color:skyblue;
+}
 
 
 
 /* FOTOGALERIE */
-
+.galerie {
+    display: flex;
+    flex-direction: column;
+}
 
 
 
 /* PATICKA */
+.paticka {
+    background: linear-gradient(to bottom, lightgrey, white);
+}
