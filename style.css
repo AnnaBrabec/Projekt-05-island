@@ -15,8 +15,7 @@ body {
     font-family: 'Merriweather', serif;
     font-size: 16px;
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
+    position: relative;
 }
 
 
@@ -70,7 +69,11 @@ body {
 
 
 /* OBSAH */
-
+.obsah {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
 .nadpis::after {
     content: "";
     display: block;
@@ -119,12 +122,22 @@ body {
         display: flex;
         justify-content: space-evenly;
     }
+   .uvod  {
+    margin: 0 20px 0 20px;
+   }
+   .proc {
+    margin: 0 20px 0 20px;
+
+   }
+   .comusitevidet {
+    margin: 0 20px 0 20px;
+   }
     .galerie {
         flex-direction: row;
         flex-wrap: wrap;
+        width: 100%;
     }
     .foto img {
-        width: 100%;
         transition: 0.3s;
         display: block;
     }
@@ -147,14 +160,52 @@ body {
 
 /*PC*/
 @media  screen and (min-width: 1000px) {
+    .hlavicka {
+        min-height: 400px;
+        width: 95%;
+        margin: auto;
+    }
   .menu {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
   }
-  .menuuvod {
-    display: flex;
+  .zarovnani {
+    width: 70%;
+    margin-left: 20%;
+  }
+  .menu {
+    text-align: left;
+    padding-right: 30px;
+    padding-left: 25px;
+    padding-top: 25px;
   }
   .uvod {
     flex-direction: column;
+    margin: 25px;
+    justify-content: space-between;
+  }
+  .menu-uvod {
+    display: flex;
+    flex-direction: row;
+  }
+  .obsah {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 0px 15px grey;
+    width: 70%;
+    top: 355px;
+    left: 20%;
+  }
+  .proc {
+    margin-left: 50px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+  }
+  .comusitevidet {
+    margin-left: 200px;
+    margin-right: 50px;
   }
 }
