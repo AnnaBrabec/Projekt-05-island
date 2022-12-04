@@ -140,10 +140,12 @@ body {
     .foto img {
         transition: 0.3s;
         display: block;
+        width: 100%;
     }
     .foto {
         position: relative;
         overflow: hidden;
+        width: 50%;
     }
    .foto .popisek {
     width: 100%;
@@ -207,5 +209,11 @@ body {
   .comusitevidet {
     margin-left: 200px;
     margin-right: 50px;
+  }
+  .foto {
+    width: calc(100%/3);
+  }
+  .paticka {
+    background: white;
   }
 }
